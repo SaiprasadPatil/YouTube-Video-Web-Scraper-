@@ -53,4 +53,3 @@ License
 Acknowledgments
 This project utilizes Flask, Selenium, and Beautiful Soup libraries.
 Acknowledge any other resources, tutorials, or libraries used in the project.
-Ensure to replace placeholders like yourusername, your-repo, and [Include the license...] with the appropriate information. Adjust and expand the sections to provide a comprehensive overview of your project in the README
