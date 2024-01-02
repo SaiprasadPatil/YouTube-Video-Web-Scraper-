@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Video Scraper</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>YouTube Video Webscraper</h1>
+
+    <div class="center">
+        <form action="/scrape" method="post">
+            <label for="channel_url">Enter YouTube Channel URL:</label>
+            <input type="text" id="channel_url" name="channel_url" required>
+            <button type="submit" class="scrape-button">Scrape Videos</button>
+        </form>
+    </div>
+
+    <h2>:Scraped Video Information:</h2>
+    <table>
+        <tr>
+            <th>Thumbnail</th>
+            <th>Video Titles</th>
+            <th>Views & Time</th>
+        </tr>
+        {% for thumbnail, title, views_time in videos %}
+        <tr>
+            <td><img src="{{ thumbnail }}" alt="Video Thumbnail"></td>
+            <td>{{ title }}</td>
+            <td>{{ views_time }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

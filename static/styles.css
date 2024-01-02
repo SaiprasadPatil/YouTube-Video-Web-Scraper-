@@ -1,0 +1,59 @@
+/* styles.css */
+body {
+    background-color: skyblue;
+    color: black;
+    font-weight: bold;
+    text-align: center; /* Center-align text */
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align child elements */
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    border: 1px solid #333;
+    border-radius: 25px; /* Add rounded corners to the input field */
+    padding: 15px; /* Increase padding for a larger input field */
+    font-size: 16px; /* Increase font size */
+    font-weight: bold;
+}
+
+.scrape-button {
+    border: none; /* Remove button border */
+    border-radius: 25px; /* Add rounded corners to the button */
+    background-color: #007BFF; /* Set button background color */
+    color: white; /* Set button text color */
+    font-size: 16px; /* Increase font size */
+    font-weight: bold;
+    padding: 15px 30px; /* Adjust padding for a larger button */
+    cursor: pointer;
+}
+
+.scrape-button:hover {
+    background-color: #0056b3; /* Change button color on hover */
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: white;
+    color: black;
+}
+
+img {
+    max-width: 200px;
+    max-height: 200px;
+}
